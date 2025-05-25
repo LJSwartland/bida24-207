@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: orangered;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Navigation */
+.mobile-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #444;
+    padding: 1rem;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #666;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-nav a:hover {
+    background-color: #888;
+}
+
+/* Main Product Section */
+.new_product {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.home-head {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.new-watch {
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.new-watch img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.new-watch h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.new-watch a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.new-watch a:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+.foot {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #222;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .home-head {
+        font-size: 1.5rem;
+    }
+
+    .new-watch {
+        max-width: 90%;
+    }
+
+    .mobile-nav {
+        gap: 0.5rem;
+    }
+
+    .mobile-nav a {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1,
+    .home-head {
+        font-size: 1.3rem;
+    }
+
+    .mobile-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new-watch h3 {
+        font-size: 1rem;
+    }
+}

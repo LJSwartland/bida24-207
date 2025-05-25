@@ -1,0 +1,149 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: gold;
+    color: #222;
+    padding: 0 1rem;
+}
+
+btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #000;
+}
+
+header {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Nav */
+.mobile-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    background-color: #333;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.mobile-nav a:hover {
+    background-color: #666;
+}
+
+/* Headline */
+.luxury-head {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    color: #000;
+    font-size: 1.8rem;
+}
+
+/* Product Grid */
+.luxury-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+/* Individual Watch Card */
+.watch {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+}
+
+.watch img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.watch h1 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.watch p {
+    margin: 0.5rem 0;
+    color: #222;
+}
+
+.add {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add:hover {
+    background-color: #111;
+}
+
+/* Footer */
+footer.foot {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #111;
+    color: #fff;
+}
+
+footer.foot a {
+    color: #00aced;
+    text-decoration: none;
+}
+
+footer.foot a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Layouts */
+@media (min-width: 600px) {
+    .luxury-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .luxury-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .luxury-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
